@@ -1,0 +1,27 @@
+{
+  "name": "month-03-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:todo:smoke": "playwright test --project=todo-chromium --grep @smoke",
+    "test:todo:regression": "playwright test --project=todo-chromium --grep @regression",
+    "test:todo": "playwright test --project=todo-chromium",
+    "test:todo:headed": "playwright test --project=todo-chromium --headed",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run test"
+  },
+  "report": "playwright show-report",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
