@@ -8,6 +8,9 @@
     "test:todo:regression": "playwright test --project=todo-chromium --grep @regression",
     "test:todo": "playwright test --project=todo-chromium",
     "test:todo:headed": "playwright test --project=todo-chromium --headed",
+    "test:example": "playwright test --project=example-chromium",
+    "test:example:headed": "playwright test --project=example-chromium --headed",
+    "test:smoke": "playwright test --grep @smoke",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run test"
   },

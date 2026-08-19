@@ -30,16 +30,21 @@ export default defineConfig({
   },
 
   projects: [
-    {
-      name: "todo-chromium",
-
-      testMatch: /todo-.*\.spec\.ts/,
-
-      use: {
-        ...devices["Desktop Chrome"],
-
-        baseURL: environment.todoBaseUrl
-      }
+  {
+    name: "todo-chromium",
+    testMatch: /todo-.*\.spec\.ts/,
+    use: {
+      ...devices["Desktop Chrome"],
+      baseURL: environment.todoBaseUrl
     }
+  },
+  {
+    name: "example-chromium",
+    testMatch: /example-.*\.spec\.ts/,
+    use: {
+      ...devices["Desktop Chrome"],
+      baseURL: environment.exampleBaseUrl
+    }
+  }
   ]
 });
