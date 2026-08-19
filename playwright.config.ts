@@ -3,15 +3,7 @@ import {
   devices
 } from "@playwright/test";
 
-import dotenv from "dotenv";
-
-dotenv.config();
-
-const todoBaseUrl = process.env.TODO_BASE_URL;
-
-if (!todoBaseUrl) {
-  throw new Error("TODO_BASE_URL is missing from the environment");
-}
+import { environment } from "./config/environment";
 
 export default defineConfig({
   testDir: "./tests",
@@ -46,8 +38,7 @@ export default defineConfig({
       use: {
         ...devices["Desktop Chrome"],
 
-        baseURL:
-          process.env.TODO_BASE_URL 
+        baseURL: environment.todoBaseUrl
       }
     }
   ]
