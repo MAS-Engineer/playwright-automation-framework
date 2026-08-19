@@ -15,5 +15,6 @@ function requireEnvironmentVariable(name: string): string {
 }
 
 export const environment = {
-  todoBaseUrl: requireEnvironmentVariable("TODO_BASE_URL")
+  todoBaseUrl: requireEnvironmentVariable("TODO_BASE_URL"),
+  exampleBaseUrl: requireEnvironmentVariable("EXAMPLE_BASE_URL")
 };
