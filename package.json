@@ -11,6 +11,9 @@
     "test:example": "playwright test --project=example-chromium",
     "test:example:headed": "playwright test --project=example-chromium --headed",
     "test:smoke": "playwright test --grep @smoke",
+    "test:sauce": "playwright test --project=sauce-chromium",
+    "test:sauce:headed": "playwright test --project=sauce-chromium --headed",
+    "test:sauce:setup": "playwright test --project=sauce-setup",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run test"
   },
