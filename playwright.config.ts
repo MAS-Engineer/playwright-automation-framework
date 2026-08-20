@@ -45,6 +45,24 @@ export default defineConfig({
       ...devices["Desktop Chrome"],
       baseURL: environment.exampleBaseUrl
     }
+  },
+  {
+  name: "sauce-setup",
+  testMatch: /sauce\.setup\.ts/,
+  use: {
+    ...devices["Desktop Chrome"],
+    baseURL: environment.sauceBaseUrl
   }
+},
+{
+  name: "sauce-chromium",
+  testMatch: /sauce-.*\.spec\.ts/,
+  dependencies: ["sauce-setup"],
+  use: {
+    ...devices["Desktop Chrome"],
+    baseURL: environment.sauceBaseUrl,
+    storageState: "playwright/.auth/sauce-user.json"
+  }
+}
   ]
 });

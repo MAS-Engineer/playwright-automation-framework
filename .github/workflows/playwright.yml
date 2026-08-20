@@ -14,6 +14,9 @@ jobs:
     env:
       TODO_BASE_URL: https://demo.playwright.dev
       EXAMPLE_BASE_URL: https://example.com
+      SAUCE_BASE_URL: https://www.saucedemo.com
+      SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
+      SAUCE_PASSWORD: ${{ secrets.SAUCE_PASSWORD }}
 
 
     steps:
