@@ -14,6 +14,7 @@
     "test:sauce": "playwright test --project=sauce-chromium",
     "test:sauce:headed": "playwright test --project=sauce-chromium --headed",
     "test:sauce:setup": "playwright test --project=sauce-setup",
+    "test:api": "playwright test --project=json-api",
     "typecheck": "tsc --noEmit",
     "check": "npm run typecheck && npm run test"
   },
