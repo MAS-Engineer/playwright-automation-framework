@@ -17,6 +17,7 @@ jobs:
       SAUCE_BASE_URL: https://www.saucedemo.com
       SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
       SAUCE_PASSWORD: ${{ secrets.SAUCE_PASSWORD }}
+      API_BASE_URL: https://jsonplaceholder.typicode.com
 
 
     steps:

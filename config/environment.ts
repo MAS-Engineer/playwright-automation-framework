@@ -19,5 +19,6 @@ export const environment = {
   exampleBaseUrl: requireEnvironmentVariable("EXAMPLE_BASE_URL"),
   sauceBaseUrl: requireEnvironmentVariable("SAUCE_BASE_URL"),
   sauceUsername: requireEnvironmentVariable("SAUCE_USERNAME"),
-  saucePassword: requireEnvironmentVariable("SAUCE_PASSWORD")
+  saucePassword: requireEnvironmentVariable("SAUCE_PASSWORD"),
+  apiBaseUrl: requireEnvironmentVariable("API_BASE_URL")
 };

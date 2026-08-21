@@ -63,6 +63,13 @@ export default defineConfig({
     baseURL: environment.sauceBaseUrl,
     storageState: "playwright/.auth/sauce-user.json"
   }
+},
+{
+  name: "json-api",
+  testMatch: /api-.*\.spec\.ts/,
+  use: {
+    baseURL: environment.apiBaseUrl
+  }
 }
   ]
 });
